@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4caf50;
+}
+
+label,
+select,
+button {
+  margin: 10px 0;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}

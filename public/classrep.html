@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Rep Dashboard</title>
+    <link
+      rel="icon"
+      href="img/cropped-cropped-LOGO-1-300x126-1-32x32.png"
+      type="icon/png"
+    />
+    <link rel="stylesheet" href="./css/classrep.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Class Representative Dashboard</h1>
+      <p id="repName" class="user-info"></p>
+    </header>
+
+    <section class="details">
+      <!-- Automatically detect date and week -->
+      <p>Date: <span id="currentDate"></span></p>
+      <p>Week: <span id="currentWeek"></span></p>
+
+      <!-- Class Rep Details -->
+      <p>Department: <span id="classRepDepartment"></span></p>
+      <p>Course: <span id="classRepCourse"></span></p>
+      <p>Class: <span id="classRepClass"></span></p>
+    </section>
+
+    <section class="attendance-form">
+      <!-- Dropdowns for Unit and Trainer -->
+      <div class="dropdowns">
+        <label for="unitName">Unit:</label>
+        <select id="unitName">
+          <option value="">Select Unit</option>
+        </select>
+
+        <label for="trainer">Trainer:</label>
+        <select id="trainer">
+          <option value="">Select Trainer</option>
+        </select>
+      </div>
+
+      <!-- Start Time and Stop Time -->
+      <div class="time-inputs">
+        <label for="startTime">Start Time (hh:mm):</label>
+        <input type="time" id="startTime" />
+
+        <label for="stopTime">Stop Time (hh:mm):</label>
+        <input type="time" id="stopTime" />
+      </div>
+
+      <!-- Attendance Table -->
+      <table class="attendance-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Registration No</th>
+            <th>Attendance</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceTable"></tbody>
+      </table>
+
+      <!-- Action Buttons -->
+      <button id="markAttendanceButton" class="primary-btn">
+        Mark Attendance
+      </button>
+    </section>
+
+    <footer>
+      <a href="log-in.html" class="logout-link">Logout</a>
+    </footer>
+
+    <script src="./js/classrep.js"></script>
+  </body>
+</html>

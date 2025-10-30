@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex; /* Use flexbox for side-by-side layout */
+  height: 100%;
+  width: 100%;
+  gap: 10px; /* Create a gap between flex items */
+}
+
+.logo-container {
+  flex: 1; /* Allow this container to take available space proportionately */
+  position: relative; /* Set position relative for the child img */
+  overflow: hidden; /* Hide any overflow */
+  border: 1px solid #ddd;
+  margin: 20px; /* Optional margin for outside spacing */
+  padding: 20px; /* Padding inside the login container */
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cover-image {
+  width: 100%; /* Make the image take the full width of the div */
+  height: 100%; /* Make the image take the full height of the div */
+  object-fit: fill; /* Maintain aspect ratio and cover the div */
+  position: absolute; /* Allow positioning */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+}
+
+.login-container {
+  flex: 1; /* Allow this container to take available space proportionately */
+  margin: 20px; /* Optional margin for outside spacing */
+  padding: 20px; /* Padding inside the login container */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+input,
+button {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+#errorMessage {
+  color: red;
+  text-align: center;
+}

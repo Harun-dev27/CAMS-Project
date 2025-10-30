@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link
+      rel="icon"
+      href="img/cropped-cropped-LOGO-1-300x126-1-32x32.png"
+      type="icon/png"
+    />
+    <link rel="stylesheet" href="./css/style-student.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Student Dashboard</h1>
+    <p id="studentName"></p>
+    <p id="studentRegNo"></p>
+
+    <h2>Attendance Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceData">
+        <!-- Attendance data will be dynamically loaded here -->
+      </tbody>
+    </table>
+    <br /><br />
+    <a href="log-in.html">Logout</a>
+    <script src="./js/student.js"></script>
+  </body>
+</html>

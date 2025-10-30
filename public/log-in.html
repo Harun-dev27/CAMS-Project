@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Management System - Login</title>
+    <link
+      rel="icon"
+      href="img/cropped-cropped-LOGO-1-300x126-1-32x32.png"
+      type="icon/png"
+    />
+    <link rel="stylesheet" href="./css/style-log-in.css" />
+  </head>
+  <body>
+    <h1>Kamukunji TVC Class Attendance</h1>
+    <div class="main-container">
+      <div class="logo-container">
+        <img src="img/KTVC-Logo.png" alt="logo" class="cover-image" />
+      </div>
+      <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input type="password" id="password" required />
+            <button
+              type="button"
+              class="toggle-password"
+              onclick="togglePassword('password')"
+              aria-label="Toggle password visibility"
+            >
+              👁️
+            </button>
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+    <script src="./js/log-in.js"></script>
+  </body>
+</html>

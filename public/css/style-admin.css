@@ -1,0 +1,183 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Focus and Hover Effects */
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Role-Specific Fields Styling */
+.role-fields {
+  display: none; /* Hidden by default */
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Success and Error Message Styling */
+#successMessage {
+  font-weight: bold;
+  margin: 10px 0;
+  display: none;
+}
+
+#successMessage.green {
+  color: green;
+}
+
+#successMessage.red {
+  color: red;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Loading Indicator */
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: #007bff;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Delete Button Styling */
+.btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+  }
+
+  .toggle-btn {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .toggle-btn:hover {
+    background-color: #0056b3;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+}
+
+/* Validation Styling */
+input[required]:invalid {
+  border: 2px solid red;
+}

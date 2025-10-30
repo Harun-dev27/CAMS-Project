@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainer Dashboard</title>
+    <link
+      rel="icon"
+      href="img/cropped-cropped-LOGO-1-300x126-1-32x32.png"
+      type="icon/png"
+    />
+    <link rel="stylesheet" href="./css/trainer.css" />
+  </head>
+  <body>
+    <h1>Trainer Dashboard</h1>
+    <p id="trainerName"></p>
+
+    <h2>Mark Attendance</h2>
+    <label for="department">Department:</label>
+    <select id="department"></select>
+
+    <label for="classSelect">Class:</label>
+    <select id="classSelect"></select>
+
+    <label for="unitSelect">Unit:</label>
+    <select id="unitSelect"></select>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Registration No</th>
+          <th>Attendance</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceTable"></tbody>
+    </table>
+
+    <button id="saveAttendanceBtn">Save Attendance</button>
+    <br /><br />
+    <a href="log-in.html">Logout</a>
+    <script src="./js/trainer.js"></script>
+  </body>
+</html>
